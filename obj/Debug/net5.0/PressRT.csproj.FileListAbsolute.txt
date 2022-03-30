@@ -1,0 +1,207 @@
+C:\Users\WellPLY\Downloads\EWT-W4A-20210223T015511Z-001\EWT-W4A\PressRT\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\WellPLY\Downloads\EWT-W4A-20210223T015511Z-001\EWT-W4A\PressRT\bin\Debug\net5.0\appsettings.json
+C:\Users\WellPLY\Downloads\EWT-W4A-20210223T015511Z-001\EWT-W4A\PressRT\bin\Debug\net5.0\PressRT.exe
+C:\Users\WellPLY\Downloads\EWT-W4A-20210223T015511Z-001\EWT-W4A\PressRT\bin\Debug\net5.0\PressRT.deps.json
+C:\Users\WellPLY\Downloads\EWT-W4A-20210223T015511Z-001\EWT-W4A\PressRT\bin\Debug\net5.0\PressRT.runtimeconfig.json
+C:\Users\WellPLY\Downloads\EWT-W4A-20210223T015511Z-001\EWT-W4A\PressRT\bin\Debug\net5.0\PressRT.runtimeconfig.dev.json
+C:\Users\WellPLY\Downloads\EWT-W4A-20210223T015511Z-001\EWT-W4A\PressRT\bin\Debug\net5.0\PressRT.dll
+C:\Users\WellPLY\Downloads\EWT-W4A-20210223T015511Z-001\EWT-W4A\PressRT\bin\Debug\net5.0\ref\PressRT.dll
+C:\Users\WellPLY\Downloads\EWT-W4A-20210223T015511Z-001\EWT-W4A\PressRT\bin\Debug\net5.0\PressRT.pdb
+C:\Users\WellPLY\Downloads\EWT-W4A-20210223T015511Z-001\EWT-W4A\PressRT\obj\Debug\net5.0\PressRT.csprojAssemblyReference.cache
+C:\Users\WellPLY\Downloads\EWT-W4A-20210223T015511Z-001\EWT-W4A\PressRT\obj\Debug\net5.0\PressRT.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\WellPLY\Downloads\EWT-W4A-20210223T015511Z-001\EWT-W4A\PressRT\obj\Debug\net5.0\PressRT.AssemblyInfoInputs.cache
+C:\Users\WellPLY\Downloads\EWT-W4A-20210223T015511Z-001\EWT-W4A\PressRT\obj\Debug\net5.0\PressRT.AssemblyInfo.cs
+C:\Users\WellPLY\Downloads\EWT-W4A-20210223T015511Z-001\EWT-W4A\PressRT\obj\Debug\net5.0\PressRT.csproj.CoreCompileInputs.cache
+C:\Users\WellPLY\Downloads\EWT-W4A-20210223T015511Z-001\EWT-W4A\PressRT\obj\Debug\net5.0\PressRT.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\WellPLY\Downloads\EWT-W4A-20210223T015511Z-001\EWT-W4A\PressRT\obj\Debug\net5.0\staticwebassets\PressRT.StaticWebAssets.Manifest.cache
+C:\Users\WellPLY\Downloads\EWT-W4A-20210223T015511Z-001\EWT-W4A\PressRT\obj\Debug\net5.0\staticwebassets\PressRT.StaticWebAssets.xml
+C:\Users\WellPLY\Downloads\EWT-W4A-20210223T015511Z-001\EWT-W4A\PressRT\obj\Debug\net5.0\scopedcss\bundle\PressRT.styles.css
+C:\Users\WellPLY\Downloads\EWT-W4A-20210223T015511Z-001\EWT-W4A\PressRT\obj\Debug\net5.0\PressRT.RazorTargetAssemblyInfo.cache
+C:\Users\WellPLY\Downloads\EWT-W4A-20210223T015511Z-001\EWT-W4A\PressRT\obj\Debug\net5.0\PressRT.dll
+C:\Users\WellPLY\Downloads\EWT-W4A-20210223T015511Z-001\EWT-W4A\PressRT\obj\Debug\net5.0\ref\PressRT.dll
+C:\Users\WellPLY\Downloads\EWT-W4A-20210223T015511Z-001\EWT-W4A\PressRT\obj\Debug\net5.0\PressRT.pdb
+C:\Users\WellPLY\Downloads\EWT-W4A-20210223T015511Z-001\EWT-W4A\PressRT\obj\Debug\net5.0\PressRT.genruntimeconfig.cache
+C:\Users\WellPLY\Downloads\sumo\EWT-W4A\PressRT\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\WellPLY\Downloads\sumo\EWT-W4A\PressRT\bin\Debug\net5.0\appsettings.json
+C:\Users\WellPLY\Downloads\sumo\EWT-W4A\PressRT\bin\Debug\net5.0\PressRT.exe
+C:\Users\WellPLY\Downloads\sumo\EWT-W4A\PressRT\bin\Debug\net5.0\PressRT.deps.json
+C:\Users\WellPLY\Downloads\sumo\EWT-W4A\PressRT\bin\Debug\net5.0\PressRT.runtimeconfig.json
+C:\Users\WellPLY\Downloads\sumo\EWT-W4A\PressRT\bin\Debug\net5.0\PressRT.runtimeconfig.dev.json
+C:\Users\WellPLY\Downloads\sumo\EWT-W4A\PressRT\bin\Debug\net5.0\PressRT.dll
+C:\Users\WellPLY\Downloads\sumo\EWT-W4A\PressRT\bin\Debug\net5.0\ref\PressRT.dll
+C:\Users\WellPLY\Downloads\sumo\EWT-W4A\PressRT\bin\Debug\net5.0\PressRT.pdb
+C:\Users\WellPLY\Downloads\sumo\EWT-W4A\PressRT\obj\Debug\net5.0\PressRT.csprojAssemblyReference.cache
+C:\Users\WellPLY\Downloads\sumo\EWT-W4A\PressRT\obj\Debug\net5.0\PressRT.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\WellPLY\Downloads\sumo\EWT-W4A\PressRT\obj\Debug\net5.0\PressRT.AssemblyInfoInputs.cache
+C:\Users\WellPLY\Downloads\sumo\EWT-W4A\PressRT\obj\Debug\net5.0\PressRT.AssemblyInfo.cs
+C:\Users\WellPLY\Downloads\sumo\EWT-W4A\PressRT\obj\Debug\net5.0\PressRT.csproj.CoreCompileInputs.cache
+C:\Users\WellPLY\Downloads\sumo\EWT-W4A\PressRT\obj\Debug\net5.0\PressRT.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\WellPLY\Downloads\sumo\EWT-W4A\PressRT\obj\Debug\net5.0\staticwebassets\PressRT.StaticWebAssets.Manifest.cache
+C:\Users\WellPLY\Downloads\sumo\EWT-W4A\PressRT\obj\Debug\net5.0\staticwebassets\PressRT.StaticWebAssets.xml
+C:\Users\WellPLY\Downloads\sumo\EWT-W4A\PressRT\obj\Debug\net5.0\scopedcss\bundle\PressRT.styles.css
+C:\Users\WellPLY\Downloads\sumo\EWT-W4A\PressRT\obj\Debug\net5.0\PressRT.RazorTargetAssemblyInfo.cache
+C:\Users\WellPLY\Downloads\sumo\EWT-W4A\PressRT\obj\Debug\net5.0\PressRT.dll
+C:\Users\WellPLY\Downloads\sumo\EWT-W4A\PressRT\obj\Debug\net5.0\ref\PressRT.dll
+C:\Users\WellPLY\Downloads\sumo\EWT-W4A\PressRT\obj\Debug\net5.0\PressRT.pdb
+C:\Users\WellPLY\Downloads\sumo\EWT-W4A\PressRT\obj\Debug\net5.0\PressRT.genruntimeconfig.cache
+C:\Users\WellPLY\Desktop\sumo new\EWT-W4A\PressRT\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\WellPLY\Desktop\sumo new\EWT-W4A\PressRT\bin\Debug\net5.0\appsettings.json
+C:\Users\WellPLY\Desktop\sumo new\EWT-W4A\PressRT\bin\Debug\net5.0\PressRT.exe
+C:\Users\WellPLY\Desktop\sumo new\EWT-W4A\PressRT\bin\Debug\net5.0\PressRT.deps.json
+C:\Users\WellPLY\Desktop\sumo new\EWT-W4A\PressRT\bin\Debug\net5.0\PressRT.runtimeconfig.json
+C:\Users\WellPLY\Desktop\sumo new\EWT-W4A\PressRT\bin\Debug\net5.0\PressRT.runtimeconfig.dev.json
+C:\Users\WellPLY\Desktop\sumo new\EWT-W4A\PressRT\bin\Debug\net5.0\PressRT.dll
+C:\Users\WellPLY\Desktop\sumo new\EWT-W4A\PressRT\bin\Debug\net5.0\ref\PressRT.dll
+C:\Users\WellPLY\Desktop\sumo new\EWT-W4A\PressRT\bin\Debug\net5.0\PressRT.pdb
+C:\Users\WellPLY\Desktop\sumo new\EWT-W4A\PressRT\obj\Debug\net5.0\PressRT.csprojAssemblyReference.cache
+C:\Users\WellPLY\Desktop\sumo new\EWT-W4A\PressRT\obj\Debug\net5.0\PressRT.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\WellPLY\Desktop\sumo new\EWT-W4A\PressRT\obj\Debug\net5.0\PressRT.AssemblyInfoInputs.cache
+C:\Users\WellPLY\Desktop\sumo new\EWT-W4A\PressRT\obj\Debug\net5.0\PressRT.AssemblyInfo.cs
+C:\Users\WellPLY\Desktop\sumo new\EWT-W4A\PressRT\obj\Debug\net5.0\PressRT.csproj.CoreCompileInputs.cache
+C:\Users\WellPLY\Desktop\sumo new\EWT-W4A\PressRT\obj\Debug\net5.0\PressRT.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\WellPLY\Desktop\sumo new\EWT-W4A\PressRT\obj\Debug\net5.0\staticwebassets\PressRT.StaticWebAssets.Manifest.cache
+C:\Users\WellPLY\Desktop\sumo new\EWT-W4A\PressRT\obj\Debug\net5.0\staticwebassets\PressRT.StaticWebAssets.xml
+C:\Users\WellPLY\Desktop\sumo new\EWT-W4A\PressRT\obj\Debug\net5.0\scopedcss\bundle\PressRT.styles.css
+C:\Users\WellPLY\Desktop\sumo new\EWT-W4A\PressRT\obj\Debug\net5.0\PressRT.RazorTargetAssemblyInfo.cache
+C:\Users\WellPLY\Desktop\sumo new\EWT-W4A\PressRT\obj\Debug\net5.0\PressRT.dll
+C:\Users\WellPLY\Desktop\sumo new\EWT-W4A\PressRT\obj\Debug\net5.0\ref\PressRT.dll
+C:\Users\WellPLY\Desktop\sumo new\EWT-W4A\PressRT\obj\Debug\net5.0\PressRT.pdb
+C:\Users\WellPLY\Desktop\sumo new\EWT-W4A\PressRT\obj\Debug\net5.0\PressRT.genruntimeconfig.cache
+C:\Users\user\Downloads\sumo new\sumo new\EWT-W4A\PressRT\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\user\Downloads\sumo new\sumo new\EWT-W4A\PressRT\bin\Debug\net5.0\appsettings.json
+C:\Users\user\Downloads\sumo new\sumo new\EWT-W4A\PressRT\bin\Debug\net5.0\PressRT.exe
+C:\Users\user\Downloads\sumo new\sumo new\EWT-W4A\PressRT\bin\Debug\net5.0\PressRT.deps.json
+C:\Users\user\Downloads\sumo new\sumo new\EWT-W4A\PressRT\bin\Debug\net5.0\PressRT.runtimeconfig.json
+C:\Users\user\Downloads\sumo new\sumo new\EWT-W4A\PressRT\bin\Debug\net5.0\PressRT.runtimeconfig.dev.json
+C:\Users\user\Downloads\sumo new\sumo new\EWT-W4A\PressRT\bin\Debug\net5.0\PressRT.dll
+C:\Users\user\Downloads\sumo new\sumo new\EWT-W4A\PressRT\bin\Debug\net5.0\ref\PressRT.dll
+C:\Users\user\Downloads\sumo new\sumo new\EWT-W4A\PressRT\bin\Debug\net5.0\PressRT.pdb
+C:\Users\user\Downloads\sumo new\sumo new\EWT-W4A\PressRT\obj\Debug\net5.0\PressRT.csprojAssemblyReference.cache
+C:\Users\user\Downloads\sumo new\sumo new\EWT-W4A\PressRT\obj\Debug\net5.0\PressRT.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Downloads\sumo new\sumo new\EWT-W4A\PressRT\obj\Debug\net5.0\PressRT.AssemblyInfoInputs.cache
+C:\Users\user\Downloads\sumo new\sumo new\EWT-W4A\PressRT\obj\Debug\net5.0\PressRT.AssemblyInfo.cs
+C:\Users\user\Downloads\sumo new\sumo new\EWT-W4A\PressRT\obj\Debug\net5.0\PressRT.csproj.CoreCompileInputs.cache
+C:\Users\user\Downloads\sumo new\sumo new\EWT-W4A\PressRT\obj\Debug\net5.0\PressRT.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\user\Downloads\sumo new\sumo new\EWT-W4A\PressRT\obj\Debug\net5.0\staticwebassets\PressRT.StaticWebAssets.Manifest.cache
+C:\Users\user\Downloads\sumo new\sumo new\EWT-W4A\PressRT\obj\Debug\net5.0\staticwebassets\PressRT.StaticWebAssets.xml
+C:\Users\user\Downloads\sumo new\sumo new\EWT-W4A\PressRT\obj\Debug\net5.0\scopedcss\bundle\PressRT.styles.css
+C:\Users\user\Downloads\sumo new\sumo new\EWT-W4A\PressRT\obj\Debug\net5.0\PressRT.RazorTargetAssemblyInfo.cache
+C:\Users\user\Downloads\sumo new\sumo new\EWT-W4A\PressRT\obj\Debug\net5.0\PressRT.dll
+C:\Users\user\Downloads\sumo new\sumo new\EWT-W4A\PressRT\obj\Debug\net5.0\ref\PressRT.dll
+C:\Users\user\Downloads\sumo new\sumo new\EWT-W4A\PressRT\obj\Debug\net5.0\PressRT.pdb
+C:\Users\user\Downloads\sumo new\sumo new\EWT-W4A\PressRT\obj\Debug\net5.0\PressRT.genruntimeconfig.cache
+C:\Users\WellPLY\Downloads\final\sumo new\sumo new\EWT-W4A\PressRT\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\WellPLY\Downloads\final\sumo new\sumo new\EWT-W4A\PressRT\bin\Debug\net5.0\appsettings.json
+C:\Users\WellPLY\Downloads\final\sumo new\sumo new\EWT-W4A\PressRT\bin\Debug\net5.0\PressRT.exe
+C:\Users\WellPLY\Downloads\final\sumo new\sumo new\EWT-W4A\PressRT\bin\Debug\net5.0\PressRT.deps.json
+C:\Users\WellPLY\Downloads\final\sumo new\sumo new\EWT-W4A\PressRT\bin\Debug\net5.0\PressRT.runtimeconfig.json
+C:\Users\WellPLY\Downloads\final\sumo new\sumo new\EWT-W4A\PressRT\bin\Debug\net5.0\PressRT.runtimeconfig.dev.json
+C:\Users\WellPLY\Downloads\final\sumo new\sumo new\EWT-W4A\PressRT\bin\Debug\net5.0\PressRT.dll
+C:\Users\WellPLY\Downloads\final\sumo new\sumo new\EWT-W4A\PressRT\bin\Debug\net5.0\ref\PressRT.dll
+C:\Users\WellPLY\Downloads\final\sumo new\sumo new\EWT-W4A\PressRT\bin\Debug\net5.0\PressRT.pdb
+C:\Users\WellPLY\Downloads\final\sumo new\sumo new\EWT-W4A\PressRT\obj\Debug\net5.0\PressRT.csprojAssemblyReference.cache
+C:\Users\WellPLY\Downloads\final\sumo new\sumo new\EWT-W4A\PressRT\obj\Debug\net5.0\PressRT.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\WellPLY\Downloads\final\sumo new\sumo new\EWT-W4A\PressRT\obj\Debug\net5.0\PressRT.AssemblyInfoInputs.cache
+C:\Users\WellPLY\Downloads\final\sumo new\sumo new\EWT-W4A\PressRT\obj\Debug\net5.0\PressRT.AssemblyInfo.cs
+C:\Users\WellPLY\Downloads\final\sumo new\sumo new\EWT-W4A\PressRT\obj\Debug\net5.0\PressRT.csproj.CoreCompileInputs.cache
+C:\Users\WellPLY\Downloads\final\sumo new\sumo new\EWT-W4A\PressRT\obj\Debug\net5.0\PressRT.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\WellPLY\Downloads\final\sumo new\sumo new\EWT-W4A\PressRT\obj\Debug\net5.0\staticwebassets\PressRT.StaticWebAssets.Manifest.cache
+C:\Users\WellPLY\Downloads\final\sumo new\sumo new\EWT-W4A\PressRT\obj\Debug\net5.0\staticwebassets\PressRT.StaticWebAssets.xml
+C:\Users\WellPLY\Downloads\final\sumo new\sumo new\EWT-W4A\PressRT\obj\Debug\net5.0\scopedcss\bundle\PressRT.styles.css
+C:\Users\WellPLY\Downloads\final\sumo new\sumo new\EWT-W4A\PressRT\obj\Debug\net5.0\PressRT.RazorTargetAssemblyInfo.cache
+C:\Users\WellPLY\Downloads\final\sumo new\sumo new\EWT-W4A\PressRT\obj\Debug\net5.0\PressRT.dll
+C:\Users\WellPLY\Downloads\final\sumo new\sumo new\EWT-W4A\PressRT\obj\Debug\net5.0\ref\PressRT.dll
+C:\Users\WellPLY\Downloads\final\sumo new\sumo new\EWT-W4A\PressRT\obj\Debug\net5.0\PressRT.pdb
+C:\Users\WellPLY\Downloads\final\sumo new\sumo new\EWT-W4A\PressRT\obj\Debug\net5.0\PressRT.genruntimeconfig.cache
+C:\Users\user\Downloads\final (2)\PressRT\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\user\Downloads\final (2)\PressRT\bin\Debug\net5.0\appsettings.json
+C:\Users\user\Downloads\final (2)\PressRT\bin\Debug\net5.0\PressRT.exe
+C:\Users\user\Downloads\final (2)\PressRT\bin\Debug\net5.0\PressRT.deps.json
+C:\Users\user\Downloads\final (2)\PressRT\bin\Debug\net5.0\PressRT.runtimeconfig.json
+C:\Users\user\Downloads\final (2)\PressRT\bin\Debug\net5.0\PressRT.runtimeconfig.dev.json
+C:\Users\user\Downloads\final (2)\PressRT\bin\Debug\net5.0\PressRT.dll
+C:\Users\user\Downloads\final (2)\PressRT\bin\Debug\net5.0\ref\PressRT.dll
+C:\Users\user\Downloads\final (2)\PressRT\bin\Debug\net5.0\PressRT.pdb
+C:\Users\user\Downloads\final (2)\PressRT\obj\Debug\net5.0\PressRT.csprojAssemblyReference.cache
+C:\Users\user\Downloads\final (2)\PressRT\obj\Debug\net5.0\PressRT.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Downloads\final (2)\PressRT\obj\Debug\net5.0\PressRT.AssemblyInfoInputs.cache
+C:\Users\user\Downloads\final (2)\PressRT\obj\Debug\net5.0\PressRT.AssemblyInfo.cs
+C:\Users\user\Downloads\final (2)\PressRT\obj\Debug\net5.0\PressRT.csproj.CoreCompileInputs.cache
+C:\Users\user\Downloads\final (2)\PressRT\obj\Debug\net5.0\PressRT.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\user\Downloads\final (2)\PressRT\obj\Debug\net5.0\staticwebassets\PressRT.StaticWebAssets.Manifest.cache
+C:\Users\user\Downloads\final (2)\PressRT\obj\Debug\net5.0\staticwebassets\PressRT.StaticWebAssets.xml
+C:\Users\user\Downloads\final (2)\PressRT\obj\Debug\net5.0\scopedcss\bundle\PressRT.styles.css
+C:\Users\user\Downloads\final (2)\PressRT\obj\Debug\net5.0\PressRT.RazorTargetAssemblyInfo.cache
+C:\Users\user\Downloads\final (2)\PressRT\obj\Debug\net5.0\PressRT.dll
+C:\Users\user\Downloads\final (2)\PressRT\obj\Debug\net5.0\ref\PressRT.dll
+C:\Users\user\Downloads\final (2)\PressRT\obj\Debug\net5.0\PressRT.pdb
+C:\Users\user\Downloads\final (2)\PressRT\obj\Debug\net5.0\PressRT.genruntimeconfig.cache
+D:\RIT-SEM3\EWT\suma and chat\PressRT\bin\Debug\net5.0\appsettings.Development.json
+D:\RIT-SEM3\EWT\suma and chat\PressRT\bin\Debug\net5.0\appsettings.json
+D:\RIT-SEM3\EWT\suma and chat\PressRT\bin\Debug\net5.0\PressRT.exe
+D:\RIT-SEM3\EWT\suma and chat\PressRT\bin\Debug\net5.0\PressRT.deps.json
+D:\RIT-SEM3\EWT\suma and chat\PressRT\bin\Debug\net5.0\PressRT.runtimeconfig.json
+D:\RIT-SEM3\EWT\suma and chat\PressRT\bin\Debug\net5.0\PressRT.runtimeconfig.dev.json
+D:\RIT-SEM3\EWT\suma and chat\PressRT\bin\Debug\net5.0\PressRT.dll
+D:\RIT-SEM3\EWT\suma and chat\PressRT\bin\Debug\net5.0\ref\PressRT.dll
+D:\RIT-SEM3\EWT\suma and chat\PressRT\bin\Debug\net5.0\PressRT.pdb
+D:\RIT-SEM3\EWT\suma and chat\PressRT\obj\Debug\net5.0\PressRT.csproj.AssemblyReference.cache
+D:\RIT-SEM3\EWT\suma and chat\PressRT\obj\Debug\net5.0\PressRT.GeneratedMSBuildEditorConfig.editorconfig
+D:\RIT-SEM3\EWT\suma and chat\PressRT\obj\Debug\net5.0\PressRT.AssemblyInfoInputs.cache
+D:\RIT-SEM3\EWT\suma and chat\PressRT\obj\Debug\net5.0\PressRT.AssemblyInfo.cs
+D:\RIT-SEM3\EWT\suma and chat\PressRT\obj\Debug\net5.0\PressRT.csproj.CoreCompileInputs.cache
+D:\RIT-SEM3\EWT\suma and chat\PressRT\obj\Debug\net5.0\PressRT.MvcApplicationPartsAssemblyInfo.cache
+D:\RIT-SEM3\EWT\suma and chat\PressRT\obj\Debug\net5.0\staticwebassets\PressRT.StaticWebAssets.Manifest.cache
+D:\RIT-SEM3\EWT\suma and chat\PressRT\obj\Debug\net5.0\staticwebassets\PressRT.StaticWebAssets.xml
+D:\RIT-SEM3\EWT\suma and chat\PressRT\obj\Debug\net5.0\scopedcss\bundle\PressRT.styles.css
+D:\RIT-SEM3\EWT\suma and chat\PressRT\obj\Debug\net5.0\PressRT.RazorTargetAssemblyInfo.cache
+D:\RIT-SEM3\EWT\suma and chat\PressRT\obj\Debug\net5.0\PressRT.dll
+D:\RIT-SEM3\EWT\suma and chat\PressRT\obj\Debug\net5.0\ref\PressRT.dll
+D:\RIT-SEM3\EWT\suma and chat\PressRT\obj\Debug\net5.0\PressRT.pdb
+D:\RIT-SEM3\EWT\suma and chat\PressRT\obj\Debug\net5.0\PressRT.genruntimeconfig.cache
+D:\RIT-SEM3\EWT\suma and chat - Copy\PressRT\bin\Debug\net5.0\appsettings.Development.json
+D:\RIT-SEM3\EWT\suma and chat - Copy\PressRT\bin\Debug\net5.0\appsettings.json
+D:\RIT-SEM3\EWT\suma and chat - Copy\PressRT\bin\Debug\net5.0\PressRT.exe
+D:\RIT-SEM3\EWT\suma and chat - Copy\PressRT\bin\Debug\net5.0\PressRT.deps.json
+D:\RIT-SEM3\EWT\suma and chat - Copy\PressRT\bin\Debug\net5.0\PressRT.runtimeconfig.json
+D:\RIT-SEM3\EWT\suma and chat - Copy\PressRT\bin\Debug\net5.0\PressRT.runtimeconfig.dev.json
+D:\RIT-SEM3\EWT\suma and chat - Copy\PressRT\bin\Debug\net5.0\PressRT.dll
+D:\RIT-SEM3\EWT\suma and chat - Copy\PressRT\bin\Debug\net5.0\ref\PressRT.dll
+D:\RIT-SEM3\EWT\suma and chat - Copy\PressRT\bin\Debug\net5.0\PressRT.pdb
+D:\RIT-SEM3\EWT\suma and chat - Copy\PressRT\obj\Debug\net5.0\PressRT.csproj.AssemblyReference.cache
+D:\RIT-SEM3\EWT\suma and chat - Copy\PressRT\obj\Debug\net5.0\PressRT.GeneratedMSBuildEditorConfig.editorconfig
+D:\RIT-SEM3\EWT\suma and chat - Copy\PressRT\obj\Debug\net5.0\PressRT.AssemblyInfoInputs.cache
+D:\RIT-SEM3\EWT\suma and chat - Copy\PressRT\obj\Debug\net5.0\PressRT.AssemblyInfo.cs
+D:\RIT-SEM3\EWT\suma and chat - Copy\PressRT\obj\Debug\net5.0\PressRT.csproj.CoreCompileInputs.cache
+D:\RIT-SEM3\EWT\suma and chat - Copy\PressRT\obj\Debug\net5.0\PressRT.MvcApplicationPartsAssemblyInfo.cache
+D:\RIT-SEM3\EWT\suma and chat - Copy\PressRT\obj\Debug\net5.0\staticwebassets\PressRT.StaticWebAssets.Manifest.cache
+D:\RIT-SEM3\EWT\suma and chat - Copy\PressRT\obj\Debug\net5.0\staticwebassets\PressRT.StaticWebAssets.xml
+D:\RIT-SEM3\EWT\suma and chat - Copy\PressRT\obj\Debug\net5.0\scopedcss\bundle\PressRT.styles.css
+D:\RIT-SEM3\EWT\suma and chat - Copy\PressRT\obj\Debug\net5.0\PressRT.RazorTargetAssemblyInfo.cache
+D:\RIT-SEM3\EWT\suma and chat - Copy\PressRT\obj\Debug\net5.0\PressRT.dll
+D:\RIT-SEM3\EWT\suma and chat - Copy\PressRT\obj\Debug\net5.0\ref\PressRT.dll
+D:\RIT-SEM3\EWT\suma and chat - Copy\PressRT\obj\Debug\net5.0\PressRT.pdb
+D:\RIT-SEM3\EWT\suma and chat - Copy\PressRT\obj\Debug\net5.0\PressRT.genruntimeconfig.cache
+D:\RIT-SEM3\EWT\WONGKAIYINCHAT\PressRT\bin\Debug\net5.0\appsettings.Development.json
+D:\RIT-SEM3\EWT\WONGKAIYINCHAT\PressRT\bin\Debug\net5.0\appsettings.json
+D:\RIT-SEM3\EWT\WONGKAIYINCHAT\PressRT\bin\Debug\net5.0\PressRT.exe
+D:\RIT-SEM3\EWT\WONGKAIYINCHAT\PressRT\bin\Debug\net5.0\PressRT.deps.json
+D:\RIT-SEM3\EWT\WONGKAIYINCHAT\PressRT\bin\Debug\net5.0\PressRT.runtimeconfig.json
+D:\RIT-SEM3\EWT\WONGKAIYINCHAT\PressRT\bin\Debug\net5.0\PressRT.runtimeconfig.dev.json
+D:\RIT-SEM3\EWT\WONGKAIYINCHAT\PressRT\bin\Debug\net5.0\PressRT.dll
+D:\RIT-SEM3\EWT\WONGKAIYINCHAT\PressRT\bin\Debug\net5.0\ref\PressRT.dll
+D:\RIT-SEM3\EWT\WONGKAIYINCHAT\PressRT\bin\Debug\net5.0\PressRT.pdb
+D:\RIT-SEM3\EWT\WONGKAIYINCHAT\PressRT\obj\Debug\net5.0\PressRT.csproj.AssemblyReference.cache
+D:\RIT-SEM3\EWT\WONGKAIYINCHAT\PressRT\obj\Debug\net5.0\PressRT.GeneratedMSBuildEditorConfig.editorconfig
+D:\RIT-SEM3\EWT\WONGKAIYINCHAT\PressRT\obj\Debug\net5.0\PressRT.AssemblyInfoInputs.cache
+D:\RIT-SEM3\EWT\WONGKAIYINCHAT\PressRT\obj\Debug\net5.0\PressRT.AssemblyInfo.cs
+D:\RIT-SEM3\EWT\WONGKAIYINCHAT\PressRT\obj\Debug\net5.0\PressRT.csproj.CoreCompileInputs.cache
+D:\RIT-SEM3\EWT\WONGKAIYINCHAT\PressRT\obj\Debug\net5.0\PressRT.MvcApplicationPartsAssemblyInfo.cache
+D:\RIT-SEM3\EWT\WONGKAIYINCHAT\PressRT\obj\Debug\net5.0\staticwebassets\PressRT.StaticWebAssets.Manifest.cache
+D:\RIT-SEM3\EWT\WONGKAIYINCHAT\PressRT\obj\Debug\net5.0\staticwebassets\PressRT.StaticWebAssets.xml
+D:\RIT-SEM3\EWT\WONGKAIYINCHAT\PressRT\obj\Debug\net5.0\scopedcss\bundle\PressRT.styles.css
+D:\RIT-SEM3\EWT\WONGKAIYINCHAT\PressRT\obj\Debug\net5.0\PressRT.RazorTargetAssemblyInfo.cache
+D:\RIT-SEM3\EWT\WONGKAIYINCHAT\PressRT\obj\Debug\net5.0\PressRT.dll
+D:\RIT-SEM3\EWT\WONGKAIYINCHAT\PressRT\obj\Debug\net5.0\ref\PressRT.dll
+D:\RIT-SEM3\EWT\WONGKAIYINCHAT\PressRT\obj\Debug\net5.0\PressRT.pdb
+D:\RIT-SEM3\EWT\WONGKAIYINCHAT\PressRT\obj\Debug\net5.0\PressRT.genruntimeconfig.cache
