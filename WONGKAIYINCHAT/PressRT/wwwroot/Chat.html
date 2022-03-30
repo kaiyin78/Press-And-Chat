@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Room</title>
+    <link href="image/favicon.png" rel="shortcut icon">
+    <link href="css/chat.css" rel="stylesheet">
+    <link href="css/app2.css" rel="stylesheet">
+    <style>
+        /* TODO(2E): Image CSS */
+        .image {
+            width: 200px;
+            height: 150px;
+            border: 1px solid #999;
+            cursor: pointer;
+        }
+
+        /* TODO(4B): Fullscreen CSS */
+        .image:fullscreen {
+            object-fit: scale-down;
+        }
+
+        /* TODO(6A): Drag-and-drop CSS */
+        .active {
+            outline: 5px dashed red;
+            outline-offset: -5px;
+        }
+
+
+        .game {
+            flex: 1;
+            height: 100%;
+            background-color: rgb(236, 203, 55);
+        }
+
+        .chat {
+            flex: 1;
+            height: 100%;
+            background-color: rgb(203, 240, 238);
+        }
+
+        .head {
+            background-color: #333;
+            height: 10%;
+            width: 100%;
+            display: block;
+        }
+
+        .head h2 {
+            margin: 0;
+            padding: 0;
+            color: white;
+            font-size: x-large;
+            padding-left: 30px;
+            padding-top: 10px;
+            width: 200px;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1><a href="/">Chat Room</a></h1>
+        <h3><a style="color: aliceblue;" href="list.html">Game List</a></h3>
+        <div id="icon">
+        </div>
+        <div id="name"></div>
+    </header>
+    <div class="wrapper">
+        <div class="container">
+            <div id="online"></div>
+            <div class="left">
+                <div class="player_list">
+                    <ul id="player"></ul>
+                </div>
+            </div>
+            <div class="right">
+                <div class="chat_list">
+                    <div class="display_chat">
+                        <h2 id="title">Public Chatroom</h2>
+
+                        <main>
+                            <ul id="chat"></ul>
+                        </main>
+
+                    </div>
+
+                    <form id="form" autocomplete="off">
+                        <input type="text" id="message" placeholder="Enter Message" autofocus>
+                        <button type="button" id="image">Image</button>
+                        <button type="button" id="leave">Leave</button>
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <select id="emo">
+                            <option hidden disabled selected value="1">😀</option>
+                            <option>😀</option>
+                            <option>😁</option>
+                            <option>😂</option>
+                            <option>🤣</option>
+                            <option>😃</option>
+                            <option>😄</option>
+                            <option>😅</option>
+                            <option>😆</option>
+                            <option>😉</option>
+                            <option>😊</option>
+                            <option>😋</option>
+                            <option>😎</option>
+                            <option>😍</option>
+                            <option>😘</option>
+                            <option>🥰</option>
+                            <option>😗</option>
+                            <option>😙</option>
+                            <option>😚</option>
+                            <option>🤗</option>
+                            <option>🤩</option>
+                            <option>🤔</option>
+                            <option>🤨</option>
+                            <option>😐</option>
+                        </select>
+                    </form>
+
+
+                    <span id="userTyping"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="storeId" style="display: none;"></div>
+
+
+
+    <!-- TODO: JavaScript Section -->
+    <script src="js/jquery.slim.js"></script>
+    <script src="js/signalr.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        $('#game').click(e => location = 'game.html');
+        const icon = sessionStorage.getItem('icon');
+        const name = sessionStorage.getItem('name');
+        let private;
+
+        var dict = {
+            FirstName: name,
+            ShowIcon: sessionStorage.getItem('icon')
+        };
+
+        if (!name && !icon) {
+            location = '/';
+            throw 'ERROR: Invalid name or Invalid icon';
+        }
+        $('#leave').click(e => {
+
+            location = '/';
+        });
+        $('#icon').append(icon);
+        $('#name').append(name);
+
+
+        // General Function===================
+        const m = $('.display_chat')[0];
+        let bottom = true;
+
+        function isBottom() {
+            bottom = m.scrollTop + m.clientHeight + 10 >= m.scrollHeight;
+
+        }
+        function scrollToBottom() {
+            if (bottom) {
+                m.scrollTop = m.scrollHeight;
+
+            }
+
+        }
+
+        //TODO(2A):getImageURL(message)-->URL
+        function getImageURL(message) {
+            let re = /.(jpg|jpeg|png|webp|gif|bmp)$/i;
+            try {
+                let url = new URL(message);
+                if (re.test(url.pathname)) {
+                    return url.href;
+                }
+
+            }
+            catch {
+
+            }
+            return null;
+        }
+
+
+        $(document).on('click', '#chat_btn', e => {
+            let btn = e.target;
+            $('#chat').hide();
+
+            $('.private_chat[name!=' + $(btn).attr('name') + ']').hide();
+            $('.private_chat[name=' + $(btn).attr('name') + ']').show();
+            $('#title').html("<button id='back_global'>Back</button> Private Chat Room " + $(btn).attr('class'));
+
+            private = $(btn).attr('name');
+        });
+
+        $(document).on('click', '#back_global', e => {
+            $('.private_chat').hide();
+            $('#chat').show();
+            $('#title').html("Global");
+            private = null;
+        });
+
+
+        //Todo(3A):getYoutubeID(message)-->Id
+        function getYouTubeId(message) {
+            try {
+                let url = new URL(message);
+                if (url.hostname == 'www.youtube.com' && url.pathname == '/watch') {
+                    return url.searchParams.get('v');
+                }
+
+
+            }
+            catch {
+
+            }
+            return null;
+        }
+
+        function getCurrentTime() {
+            return new Date().toLocaleTimeString('en-MY', { hour12: false, hour: '2-digit', minute: '2-digit' });
+        }
+
+        function getCurrentDate() {
+
+            return new Date().toLocaleDateString('en-US');
+        }
+        //Connection setup=========================
+        const param = $.param({ page: 'list', name: name });
+        const con = new signalR.HubConnectionBuilder()
+            .withUrl('/hub2?' + param)
+            .build();
+        con.onclose(err => {
+            alert('Disconnected');
+            location = 'index.html';
+        });
+        con.on('PlayerList', (list, count) => {
+
+            $('#player').empty();
+            for (let player of list) {
+
+                $('#player').append(`
+       
+                    <ul class="people">
+                    <li class="player">
+                       
+                            <b>${player.icon}</b> <b>${player.name}</b> 
+                            <div id="player_btn">
+                                
+                                <button id="chat_btn" name="${player.id}" class="${player.name}">Join chatroom</button>
+                        </div>
+                       
+                    </li>
+                </ul>
+           
+                `);
+
+
+                if ($('.private_chat[name=' + player.id + ']').length) {
+                    //
+                }
+                else {
+                    $('.display_chat').append(`
+                        <ul class="private_chat" name="${player.id}" style="display: none;"></ul>
+                    `);
+                }
+            }
+        });
+
+
+        con.on('UpdateStatus', (count, status) => {
+            $('#online').text("Total Online User: " + count);
+
+            isBottom();
+            $('#chat').append(`
+                <li class="status">
+                    <div>${status}</div>
+                </li>
+            `);
+            scrollToBottom();
+        });
+
+        con.on('Usertyping', (name) => {
+            $("#userTyping").html(name + " is typing...");
+
+            setTimeout(function () {
+                $('#userTyping').html('&nbsp;');
+            }, 5000);
+
+        });
+
+        //Start=================
+        con.on('ReceiveText', (icon, name, message, who, ppl) => {
+            console.log(icon);
+            time = this.getCurrentTime();
+            date = this.getCurrentDate();
+
+
+
+
+            message = message
+                .split(':)').join('😊')
+                .split(':(').join('😥')
+                .split(':|').join('😐')
+                .split(':D').join('😃')
+                .split('=)').join('😁')
+                .split(':<').join('😡')
+                .split(':-)').join('😂')
+                .split(':#').join('🤢')
+                .split('fuck').join('****')
+                .split('bitch').join('****')
+                .split('dick').join('****')
+                .split('shit').join('****')
+                .split('<3').join('❤️');
+
+            message = $('<div>').text(message).html();
+            message = message.replace(
+                /(?<=^|\s)(https?:\/\/\S+)(?=$|\s)/gi,
+                '<a target="_blank" href="$&">$&</a>'
+
+            );
+            if (ppl == "GLOBAL") {
+                if (who == "caller") {
+                    isBottom();
+                    $('#chat').append(`
+                        <li class="${who}">
+                            <div>
+                            <b>${date} , ${time}</b> 
+                                </div>
+                        <div>
+                                <b>${icon}   <b>${name}:</b>
+                            </div>
+                            <div>
+                               ${message}
+                            </div>
+                        </li>
+                    `);
+                    scrollToBottom();
+                }
+                else if (who == "others") {
+                    isBottom();
+                    $('#chat').append(`
+                    <li class="${who}">
+                        <div>
+                            <b>${date} , ${time}</b> 
+                                </div>
+                        <div>
+                                <b>${icon}   <b>${name}:</b>
+                            </div>
+                            <div>
+                               ${message}
+                            </div>
+                            
+                        </li>
+                    `);
+                    scrollToBottom();
+                }
+            }
+            else {
+                if (who == "caller") {
+                    isBottom();
+                    $('.private_chat[name=' + ppl + ']').append(`
+                        <li class="${who}">
+                            <div>
+                            <b>${date} , ${time}</b> 
+                                </div>
+                        <div>
+                                <b>${icon}   <b>${name}:</b>
+                            </div>
+                            <div>
+                               ${message}
+                            </div>
+                        </li>
+                    `);
+                    scrollToBottom();
+                }
+                else if (who == "others") {
+                    isBottom();
+                    $('.private_chat[name=' + ppl + ']').append(`
+                        <li class="${who}">
+                            <div>
+                            <b>${date} , ${time}</b> 
+                                </div>
+                        <div>
+                                <b>${icon}   <b>${name}:</b>
+                            </div>
+                            <div>
+                               ${message}
+                            </div>
+                        </li>
+                    `);
+                    scrollToBottom();
+                }
+            }
+        });
+
+        // TODO(2B): ReceiveYoutube (name,url,who)
+        con.on('ReceiveYoutube', (icon, name, url, who, ppl) => {
+            time = this.getCurrentTime();
+            date = this.getCurrentDate();
+            if (ppl == "GLOBAL") {
+                if (who == "caller") {
+                    isBottom();
+                    $('#chat').append(`
+                        <li class="${who}">
+                            <div>     <b>${date} , ${time}</b>  <b>${icon} ${name}:</b>Sent a Youtube Video<br> 
+                                <iframe width="200" height="150" 
+                                src="https://www.youtube.com/embed/${url}" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; 
+                                clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                            </div>
+                           
+                        </li>
+                    `);
+                    scrollToBottom();
+                }
+                else if (who == "others") {
+                    isBottom();
+                    $('#chat').append(`
+                        <li class="${who}">
+                            <div>     <b>${date} , ${time}</b>  <b>${icon} ${name}:</b>Sent a Youtube Video<br> 
+                                <iframe width="200" height="150" 
+                                src="https://www.youtube.com/embed/${url}" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; 
+                                clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                            </div>
+                           
+                        </li>
+                    `);
+                    scrollToBottom();
+                }
+            }
+            else {
+                if (who == "caller") {
+                    isBottom();
+                    $('.private_chat[name=' + ppl + ']').append(`
+                        <li class="${who}">
+                            <div>     <b>${date} , ${time}</b>  <b>${icon} ${name}:</b>Sent a Youtube Video<br> 
+                                <iframe width="200" height="150" 
+                                src="https://www.youtube.com/embed/${url}" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; 
+                                clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                            </div>
+                           
+                        </li>
+                    `);
+                    scrollToBottom();
+                }
+                else if (who == "others") {
+                    isBottom();
+                    $('.private_chat[name=' + ppl + ']').append(`
+                        <li class="${who}">
+                            <div>     <b>${date} , ${time}</b>  <b>${icon} ${name}:</b>Sent a Youtube Video<br> 
+                                <iframe width="200" height="150" 
+                                src="https://www.youtube.com/embed/${url}" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; 
+                                clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                            </div>
+                           
+                        </li>
+                    `);
+                    scrollToBottom();
+                }
+            }
+
+
+
+        });
+
+        // TODO(3B): ReceiveImage(name,id,who)
+        con.on('ReceiveImage', (icon, name, url, who, ppl) => {
+            time = this.getCurrentTime();
+            date = this.getCurrentDate();
+            if (ppl == "GLOBAL") {
+                if (who == "caller") {
+                    isBottom();
+                    $('#chat').append(`
+            <li class="${who}">         
+            <div>
+                <b>${date} , ${time}</b> <b>${icon}</b><b>${name}:</b> sent an image<br>
+                    <img src="${url}" class="image"
+                    onload="scrollToBottom()">
+                </div>             
+            </li>
+        `);
+                    scrollToBottom();
+                }
+                else if (who == "others") {
+                    isBottom();
+                    $('#chat').append(`
+            <li class="${who}">
+                <div>
+                <b>${date} , ${time}</b> <b>${icon}</b><b>${name}:</b> sent an image<br>
+                    <img src="${url}" class="image"
+                    onload="scrollToBottom()">
+                </div>   
+            </li>
+        `);
+                    scrollToBottom();
+                }
+            }
+            else {
+                console.log(ppl);
+                if (who == "caller") {
+                    isBottom();
+                    $('.private_chat[name=' + ppl + ']').append(`
+            <li class="${who}">
+                <div>
+                <b>${date} , ${time}</b> <b>${icon}</b><b>${name}:</b> sent an image<br>
+                    <img src="${url}" class="image"
+                    onload="scrollToBottom()">
+                </div>   
+            </li>
+        `);
+                    scrollToBottom();
+                }
+                else if (who == "others") {
+                    isBottom();
+                    $('.private_chat[name=' + ppl + ']').append(`
+            <li class="${who}">
+                <div>
+                <b>${date} , ${time}</b> <b>${icon}</b><b>${name}:</b> sent an image<br>
+                    <img src="${url}" class="image"
+                    onload="scrollToBottom()">
+                </div>   
+            </li>
+        `);
+                    scrollToBottom();
+                }
+            }
+
+
+        });
+        // TODO(3D): ReceiveYouTube(name,id,who)
+
+
+
+
+
+        //Start ====================================
+        con.start().then(main);
+        function main() {
+            $('#message').on('keypress', function (e) {
+                if (e.which == 13) {
+                    var $this = $(this);
+                    $this.hide();
+                    setTimeout(function () {
+                        $this.show();
+                    }, 10000);
+                }
+            });
+
+            var keyPressCount = 0;
+
+            $("#message").on("keypress", function () {
+                if (keyPressCount++ % 10 == 0) {
+                    con.invoke('Usertyping');
+                }
+
+            });
+
+
+
+            let msg = $('#message')[0]; // reference to txt <input> element
+            let emo = $('#emo')[0]; // reference to emo <select> element
+            // remove selection       
+            // input event -> trigger only if a selection is made
+            $('#emo').on('input', e => {
+
+                //         if(currentIndex > 0)
+                //         {
+                //  if(emo.selectedIndex != currentIndex)
+                //  {
+
+                //  }
+                // }
+                // (1) obtain cursor position
+                //     so that emoji can be added in the middle of text
+
+                let a = msg.selectionStart; // cursor start position
+                let b = msg.selectionEnd;   // cursor end position
+
+                msg.value = msg.value.substring(0, a) + // text before cursor
+                    emo.value +                 // emoji
+                    msg.value.substring(b);     // text after cursor
+
+                // (2) calculate new cursor position
+                //     emoji font usually takes 2 bytes
+                let i = a + emo.value.length;
+                msg.setSelectionRange(i, i); // set new cursor position
+
+                emo.selectedIndex = 0; // remove selection
+                msg.focus(); // focus txt <input> again
+
+            });
+
+            con.invoke('store', dict.ShowIcon);
+            $('#form').submit(e => {
+                e.preventDefault();
+                let message = $('#message').val().trim();
+                let url = getImageURL(message);
+                let id = getYouTubeId(message);
+
+                if (message) {
+                    // TODO(2B): url <--getImageURL(message)
+                    // TODO(3B): url <--getYoutubeURL(message)
+
+                    if (private != null) {
+                        if (url) {
+                            con.invoke('SendImage', icon, name, url, private);
+                        }
+                        else if (id) {
+                            // Send YouTube
+                            con.invoke('SendYouTube', icon, name, id, private);
+
+                        }
+                        else {
+                            con.invoke('SendText', icon, name, message, private);
+                        }
+                    }
+                    else {
+                        if (url) {
+                            con.invoke('SendImage', icon, name, url, null);
+                        }
+                        else if (id) {
+                            // Send YouTube
+                            con.invoke('SendYouTube', icon, name, id, null);
+
+                        }
+                        else {
+                            con.invoke('SendText', icon, name, message, null);
+                        }
+                    }
+                }
+                $('#message').val('').focus();
+
+            });
+
+            // TODO(4A): Request fullscreen
+            $('#chat, .private_chat, #player').on('click', '.image', e => e.target.requestFullscreen());
+            //TODO(5A): file select
+            $('#leave').click(e => $('/').click());
+            $('#image').click(e => $('#file').click());
+
+            $('#file').change(e => {
+                let f = e.target.files[0];
+                if (f && f.type.startsWith('image/')) {
+                    if (private != null) {
+                        fit(f, 500, 500, 'dataURL', 'image/webp')
+                            .then(url => con.invoke('SendImage', icon, name, url, private));
+                    }
+                    else {
+                        fit(f, 500, 500, 'dataURL', 'image/webp')
+                            .then(url => con.invoke('SendImage', icon, name, url, null));
+                    }
+
+                }
+                e.target.value = null;
+
+            });
+            //TODO(6B):Drag-and-drop file select 
+            $('.display_chat').on('dragenter dragover', e => {
+                e.preventDefault();
+                $('.display_chat').addClass('active');
+
+            });
+            $('.display_chat').on('dragleave drop', e => {
+                e.preventDefault();
+                $('.display_chat').removeClass('active')
+
+            });
+            $('.display_chat').on('drop', e => {
+                e.preventDefault();
+                let f = e.originalEvent.dataTransfer.files[0];
+                if (f && f.type.startsWith('image/')) {
+                    if (private != null) {
+                        fit(f, 500, 500, 'dataURL', 'image/webp')
+                            .then(url => con.invoke('SendImage', icon, name, url, private));
+                    }
+                    else {
+                        fit(f, 500, 500, 'dataURL', 'image/webp')
+                            .then(url => con.invoke('SendImage', icon, name, url, null));
+                    }
+
+                }
+            });
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>

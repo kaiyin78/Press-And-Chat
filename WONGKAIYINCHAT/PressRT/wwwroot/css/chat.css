@@ -1,0 +1,100 @@
+/***** Font *****/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body, input, textarea, select, button {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/***** Layout *****/
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+ 
+ 
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 50px;
+}
+
+header h1 {
+    margin: 0;
+    padding-left: 40px;
+    background: url(../image/favicon.png) no-repeat left center / 32px 32px;
+}
+
+header h1 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px 50px;
+    flex: 1 1 auto;
+    touch-action: none;
+    user-select: none;
+}
+
+/***** Table *****/
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #999;
+    padding: 5px 10px;
+}
+
+/***** Media Query *****/
+@media only screen and (max-width: 500px) {
+    header, main {
+        padding: 10px;
+    }
+}
+.wrapper {
+    position: relative;
+    left: 50%;
+    width: var(--wrapper);
+    height: 800px;
+    transform: translate(-50%, 0);
+}
+.container{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    height: 90%;
+    background-color: white;
+    transform: translate(-50%, -50%);
+}
+.left{
+    float: left;
+    width: 37.6%;
+    height: 100%;
+    border: 0px solid lightcyan;
+    background-color:white;
+}
+.right{
+     position: relative;
+        float: left;
+        width: 62.4%;
+        height: 100%;
+        background-color:white;
+}
+.people{
+    margin-left: -1px;
+    border-right: 1px solid lightcyan;
+    border-left: 1px solid lightcyan;
+
+}
+.people li{
+    margin-left: -1px;
+    border-right: 1px solidlightcyan;
+    border-left: 1px solid lightcyan;
+
+}
